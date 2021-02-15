@@ -1,0 +1,135 @@
+/* Header small screens */
+
+@media only screen and (max-width: 1023px) {
+    header {
+        height: 4rem;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+        overflow: hidden;
+    }
+    .mobileNav {
+        height: 100%;
+    }
+    .logocontainer {
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .menuitem {
+        padding: 1rem 0;
+    }
+    main {
+        padding-top: 4rem;
+    }
+    .cross {
+        display: none;
+    }
+}
+
+
+/* Header large screens */
+
+@media only screen and (min-width: 1024px) {
+    header {
+        height: 4rem;
+    }
+    .headercontainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo {
+        height: 4rem;
+        padding: 0 2.5rem;
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        flex-direction: row;
+    }
+    .navcontainer {
+        display: flex;
+    }
+    .menuitem {
+        padding: 0 2.5rem;
+        display: flex;
+        align-items: center;
+    }
+    main {
+        padding-top: 4rem;
+    }
+    .burger,
+    .cross {
+        display: none;
+    }
+}
+
+
+/* Header and footer styles */
+
+header {
+    background-color: var(--secondary);
+    white-space: nowrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.anchor {
+    scroll-margin-top: 5rem;
+}
+
+nav,
+nav>* {
+    display: flex;
+}
+
+.menuitem:hover {
+    background-color: var(--secondaryhighlight);
+    color: black;
+}
+
+.logo:hover {
+    background-color: var(--secondaryhighlight);
+    color: black;
+}
+
+footer {
+    background-color: var(--secondary);
+    white-space: nowrap;
+    display: flex;
+}
+
+@media only screen and (max-width: 460px) {
+    .footercontainer {
+        flex-direction: column;
+    }
+}
+
+.footercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+header p,
+header h4 {
+    margin-bottom: 0;
+}
+
+.burger img {
+    width: 27px;
+    height: 18px;
+    margin: 16px 12px;
+}

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+    --primary: #ECECE7;
+    --secondary: #BCBBAE;
+    --highlight: #9A988C;
+    --secondaryhighlight: #7E7D75;
+    --text: #353535;
+    --headerfont: 'Arimo', sans-serif;
+    --bodyfont: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-weight: normal;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    font-size: 18px;
+    color: var(--text);
+    font-family: var(--bodyfont);
+}
+
+.white-text {
+    color: white;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.dark-bg {
+    background-color: #1F2933;
+}
+
+.blue-bg {
+    background-color: #425C70;
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 864px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 865px) and (max-width: 1366px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1361px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--headerfont);
+}
+
+h1,
+.h1 {
+    font-size: 4rem;
+    line-height: 3.6rem;
+    margin-bottom: 1rem;
+}
+
+h2,
+.h2 {
+    font-size: 3rem;
+}
+
+h3,
+.h3 {
+    font-size: 2rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+h5,
+.h5 {
+    font-size: 1.5rem;
+}
+
+h6,
+.h6 {
+    font-size: 1rem;
+}
+
+p,
+li,
+.body1,
+.body2,
+.body3,
+.subtitle1,
+.subtitle2 {
+    font-family: var(--bodyfont);
+}
+
+strong {
+    font-weight: bold;
+}
+
+.body1 {
+    font-size: 1.33rem;
+}
+
+.body2 {
+    font-size: 1.11rem;
+}
+
+.body3 {
+    font-size: 1rem;
+}
+
+.subtitle1 {
+    font-size: 1.5rem;
+}
+
+.subtitle2 {
+    font-size: 1.11rem;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+body {
+    background-color: var(--primary);
+}
+
+
+/* Spacers */
+
+.spacer {
+    height: 2rem;
+}
+
+.spacer1 {
+    height: 5rem;
+}
+
+
+/* links */
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    color: var(--text)
+}
+
+footer a {
+    text-decoration: underline;
+    color: #283593
+}
+
+
+/* Containers */
+
+.full-width {
+    width: 100%;
+}
+
+.large-width {
+    max-width: 1640px;
+}
+
+.medium-width {
+    max-width: 1200px;
+}
+
+.small-width {
+    max-width: 1024px;
+}
+
+.centered-padded {
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #ECECE7;
+    color: black;
+    border: none;
+    font-family: var(--bodyfont);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus {
+    background-color: #BCBBAE;
+    color: black;
+    box-shadow: none;
+}
