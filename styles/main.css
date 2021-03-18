@@ -45,6 +45,10 @@ html {
     background-color: #425C70;
 }
 
+.purple-bg {
+    background-color: #D9DBE5;
+}
+
 @media screen and (max-width: 360px) {
     html {
         font-size: 14px;
